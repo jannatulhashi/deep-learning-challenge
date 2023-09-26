@@ -67,7 +67,7 @@ Using my knowledge of TensorFlow, I’ll design a neural network, or deep learni
 
 #### Step 3: Optimize the Model
 
-Using my knowledge of TensorFlow, optimize my model to achieve a target predictive accuracy higher than 75%.
+Using my knowledge of TensorFlow, optimized my model to achieve a target predictive accuracy higher than 75%.
 Use any or all of the following methods to optimize my model:
 
 - Adjust the input data to ensure that no variables or outliers are causing confusion in the model, such as:
@@ -80,7 +80,7 @@ Use any or all of the following methods to optimize my model:
      - Use different activation functions for the hidden layers.
      - Add or reduce the number of epochs to the training regimen.
 
-1: I''ll create a new Google Colab file and name it **AlphabetSoupCharity_Optimization.ipynb**.
+1: I'll create a new Google Colab file and name it **AlphabetSoupCharity_Optimization.ipynb**.
 
 2: Import my dependencies and read in the **charity_data.csv** to a Pandas DataFrame.
 
@@ -111,7 +111,8 @@ The report should contain the following:
 
 3: **Summary:** I'll summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then I'll explain my recommendation.
 
-#### Alphabet Soup Funding Analysis Report
+## Report: Alphabet Soup Funding Analysis Report
+
 **Overview of the Analysis:**
 The primary objective of this analysis is to leverage the power of machine learning, particularly deep learning, to create a binary classification model that can predict the success of applicants funded by Alphabet Soup. This tool will assist Alphabet Soup in making informed decisions about which organizations to fund based on the likelihood of their success.
 
