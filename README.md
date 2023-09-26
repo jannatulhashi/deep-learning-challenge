@@ -111,6 +111,71 @@ The report should contain the following:
 
 3: **Summary:** I'll summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then I'll explain my recommendation.
 
+#### Alphabet Soup Funding Analysis Report
+**Overview of the Analysis:**
+The primary objective of this analysis is to leverage the power of machine learning, particularly deep learning, to create a binary classification model that can predict the success of applicants funded by Alphabet Soup. This tool will assist Alphabet Soup in making informed decisions about which organizations to fund based on the likelihood of their success.
+
+**Results:**
+
+**Data Preprocessing:**
+
+**Target Variable:**
+
+**IS_SUCCESSFUL:** This indicates whether the funds provided by Alphabet Soup were used effectively by the organization.
+
+**Features:**
+
+All the columns present in the dataset, except for EIN and IS_SUCCESSFUL, were used as features. This includes APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT, and NAME.
+
+**Variables Removed:**
+
+**EIN:** This column was removed as it is an identification column and does not provide any significant information to determine the success of an organization.
+
+**Compiling, Training, and Evaluating the Model:**
+
+**Model Structure:**
+
+Input Layer: 128 neurons with ReLU activation function.
+
+First Hidden Layer: 64 neurons with ReLU activation function.
+
+Second Hidden Layer: 32 neurons with ReLU activation function.
+
+Third Hidden Layer: 16 neurons with ReLU activation function.
+
+Output Layer: 1 neuron with Sigmoid activation function since it's a binary classification problem.
+
+**Model Compilation:**
+
+Optimizer: Adam
+
+Loss function: Binary Crossentropy
+
+Metrics: Accuracy
+
+**Model Performance:**
+
+The model's accuracy on the test set was found to be 79%.
+
+**Steps to Optimize Model Performance:**
+
+The data was preprocessed by binning values of categorical columns that had a large number of unique values. Specifically, values in NAME, APPLICATION_TYPE, and CLASSIFICATION columns were grouped into an 'Other' category if they occurred fewer times than a set cutoff value.
+Data was then converted into a numerical format using one-hot encoding (pd.get_dummies).
+
+The data was standardized using StandardScaler to have zero mean and unit variance.
+
+The deep learning model was designed with multiple layers and neurons to capture the underlying patterns in the data. The model was trained over 100 epochs.
+
+**Summary:**
+
+The deep learning model designed for predicting the success of applicants funded by Alphabet Soup provides a mechanism for understanding the key factors that determine whether an organization will use the funds effectively. The model's accuracy indicates its effectiveness in making these predictions.
+
+However, deep learning models can sometimes be seen as a 'black box', and it might be challenging to interpret which features had the most influence on the predictions.
+
+**Recommendation:**
+
+A different approach could be to use ensemble learning methods, such as Random Forest. This model can provide insights into feature importance, allowing Alphabet Soup to understand which factors are the most critical in determining an organization's success. This is also less prone to overfitting compared to deep neural networks and can sometimes achieve comparable or even better performance with the right hyperparameter tuning.
+
 #### Step 5: Copy Files Into Your Repository
 
 Now that I've finished with my analysis in Google Colab, I need to get my files into my repository for final submission.
