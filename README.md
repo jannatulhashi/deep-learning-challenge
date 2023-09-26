@@ -114,6 +114,7 @@ The report should contain the following:
 ## Report: Alphabet Soup Funding Analysis Report
 
 **Overview of the Analysis:**
+
 The primary objective of this analysis is to leverage the power of machine learning, particularly deep learning, to create a binary classification model that can predict the success of applicants funded by Alphabet Soup. This tool will assist Alphabet Soup in making informed decisions about which organizations to fund based on the likelihood of their success.
 
 **Results:**
