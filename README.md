@@ -1,4 +1,4 @@
-# Optimizing Alphabet Soup's Charitable Investments with Deep Learning
+# Optimizing Alphabet Soup's Investments with Deep Learning
 
 The project uses deep learning to help Alphabet Soup predict which funded organizations are most likely to succeed, based on historical data of over 34,000 previous fund recipients. This allows the foundation to allocate funds more effectively.
 
